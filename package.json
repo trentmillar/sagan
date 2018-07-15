@@ -1,0 +1,88 @@
+{
+  "name": "saganjs",
+  "description": "Sagan ODM for Azure CosmosDB",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/trentmillar/sagan.git",
+  "author": "trentmillar <trent.millar@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "cosmosdb",
+    "azure",
+    "document",
+    "model",
+    "schema",
+    "database",
+    "sql",
+    "odm",
+    "data",
+    "datastore",
+    "query",
+    "nosql",
+    "orm",
+    "db"
+  ],
+  "scripts": {
+    "fix-lint": "eslint . --fix",
+    "lint": "eslint . --quiet",
+    "release": "git pull && git push origin master --tags && npm publish",
+    "test": "mocha --exit test/*.test.js test/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2015
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "comma-style": "error",
+      "consistent-this": [
+        "error",
+        "_this"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1,
+          "VariableDeclarator": 2
+        }
+      ],
+      "keyword-spacing": "error",
+      "no-console": "off",
+      "no-multi-spaces": "error",
+      "func-call-spacing": "error",
+      "no-trailing-spaces": "error",
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "space-infix-ops": "error",
+      "space-unary-ops": "error"
+    }
+  },
+  "dependencies": {
+    "@azure/cosmos": "^2.0.0-0",
+    "async": "^2.6.1"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "eslint": "^5.1.0",
+    "mocha": "^5.2.0"
+  }
+}
