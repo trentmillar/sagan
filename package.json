@@ -78,7 +78,12 @@
   },
   "dependencies": {
     "@azure/cosmos": "^2.0.0-0",
-    "async": "^2.6.1"
+    "async": "^2.6.1",
+    "kareem": "^2.2.1",
+    "lodash.get": "^4.4.2",
+    "mongoose-legacy-pluralize": "^1.0.2",
+    "mpath": "^0.4.1",
+    "mquery": "^3.1.2"
   },
   "devDependencies": {
     "dotenv": "^6.0.0",
